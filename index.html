@@ -3,23 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>My To-Do List</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <div class="todo-container">
-    <h1>My To-Do List</h1>
+  <main class="todo-container">
+
+    <div class="header">
+      <span class="mini-dot"></span>
+      <h1>My To-Do List</h1>
+      <p>Stay focused. Get it done.</p>
+    </div>
 
     <div class="input-area">
-      <input id="taskInput" type="text" placeholder="What needs to be done?">
+
+      <!-- Animated character -->
+      <div class="character">
+
+        <div class="character-head"></div>
+
+        <div class="character-body"></div>
+
+        <div class="character-arm arm-left"></div>
+        <div class="character-arm arm-right"></div>
+
+        <div class="character-leg leg-left"></div>
+        <div class="character-leg leg-right"></div>
+
+      </div>
+
+      <input
+        id="taskInput"
+        type="text"
+        placeholder="What needs to be done?"
+      >
+
       <button onclick="addTask()">Add</button>
+
     </div>
 
     <ul id="taskList"></ul>
-  </div>
+
+    <div class="footer">
+      <span>●</span> Your tasks are saved automatically
+    </div>
+
+  </main>
 
   <script src="script.js"></script>
+
 </body>
 </html>
